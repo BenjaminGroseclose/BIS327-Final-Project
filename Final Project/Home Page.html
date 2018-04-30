@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Grose Closes the Deal
+    </title>
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDN18XJuvBeY8lhd-q1SX4jBLEIg4rL4NE",
+            authDomain: "bis327-final-project.firebaseapp.com",
+            databaseURL: "https://bis327-final-project.firebaseio.com",
+            projectId: "bis327-final-project",
+            storageBucket: "bis327-final-project.appspot.com",
+            messagingSenderId: "529378452099"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <link href="./CSS/StyleSheet - Home.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="Home Page.html">
+                <img src="Images/Logo.png" alt="Image" />
+            </a>
+        </div>
+        <div id="title">
+            <h1>
+                Grose Closes the Deal
+            </h1>
+        </div>
+        <div id="login">
+            <form id="Login">
+                Username:<br />
+                <input type="text" name="Username"><br>
+                Password:<br />
+                <input type="password" name="Password"> <br />
+            </form>
+            <button type="submit" onclick="loginUser()" value="Login">Login</button>
+            <button type="submit" form="form1" value="Login">Create New Account</button>
+        </div>
+    </header>
+    <nav>
+        <div class="center">
+           <a href="Basketball Page.html">
+                <div class="navLink">
+                    Basketball
+                </div>
+            </a>
+            <a href="#">
+                <div class="navLink">
+                    Video Games
+                </div>
+            </a>
+            <a href="#">
+                <div id="finalNavLink">
+                    Religion
+                </div>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="center">
+            <div class="content">
+                <div id="articleTitle">
+                    <h2>
+                        Site Description
+                    </h2>
+                </div>
+                <div id="article">
+                    <p>
+                        Welcome to Ben Groseclose's webpage. Here I have decieded to write about topics that I have 
+                        knowledge of and passion. I will be covering three main topics. First Basketball, I will talk
+                        about the NBA as a whole, then College,  and finally the Utah Jazz. Second I will write about
+                        Video Games. I have for a long time had a passion to write my opinions on different type of 
+                        video games. So first I will write about Strategy games, then MOBA games, and finally include 
+                        my thoughts on the whole console vs PC debate. Then to wrap it up, I would like to write about
+                        religion and my experience with it here at College and specifically the RSO Cru.'
+                    </p>
+                </div>
+            </div>
+
+            <div id="comment">
+                <h4>
+                    Comment Section
+                </h4>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="JavaScript.js"></script>
+
+</body>
+</html>
